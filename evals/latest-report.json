@@ -1,0 +1,175 @@
+{
+  "metrics": {
+    "embedder": "hashing",
+    "generator": "extractive",
+    "questions": 31,
+    "faithfulness_pct": 100.0,
+    "claims_delivered": 124,
+    "claims_faithful": 124,
+    "balance_coverage_pct": 100.0,
+    "balance_items": 9,
+    "refusal_correct_pct": 100.0,
+    "false_refusal_rate_pct": 0.0,
+    "status_accuracy_pct": 100.0,
+    "retrieval_hit_rate_pct": 100.0,
+    "critic_claims_checked": 124,
+    "critic_claims_flagged": 0
+  },
+  "items": [
+    {
+      "id": "fact-bradford-tax-freeze",
+      "type": "fact",
+      "problems": []
+    },
+    {
+      "id": "fact-chow-ttc-fares",
+      "type": "fact",
+      "problems": []
+    },
+    {
+      "id": "fact-bradford-ltt",
+      "type": "fact",
+      "problems": []
+    },
+    {
+      "id": "fact-bradford-police",
+      "type": "fact",
+      "problems": []
+    },
+    {
+      "id": "fact-chow-school-lunch",
+      "type": "fact",
+      "problems": []
+    },
+    {
+      "id": "fact-bradford-eglinton",
+      "type": "fact",
+      "problems": []
+    },
+    {
+      "id": "fact-chow-data-centres",
+      "type": "fact",
+      "problems": []
+    },
+    {
+      "id": "fact-bradford-water",
+      "type": "fact",
+      "problems": []
+    },
+    {
+      "id": "fact-chow-landlords",
+      "type": "fact",
+      "problems": []
+    },
+    {
+      "id": "fact-bradford-marathon",
+      "type": "fact",
+      "problems": []
+    },
+    {
+      "id": "fact-chow-scarborough",
+      "type": "fact",
+      "problems": []
+    },
+    {
+      "id": "fact-bradford-100-days",
+      "type": "fact",
+      "problems": []
+    },
+    {
+      "id": "fact-bradford-bike-lanes",
+      "type": "fact",
+      "problems": []
+    },
+    {
+      "id": "cmp-property-taxes",
+      "type": "difference",
+      "problems": []
+    },
+    {
+      "id": "cmp-water",
+      "type": "difference",
+      "problems": []
+    },
+    {
+      "id": "cmp-housing",
+      "type": "difference",
+      "problems": []
+    },
+    {
+      "id": "cmp-ttc",
+      "type": "difference",
+      "problems": []
+    },
+    {
+      "id": "cmp-safety",
+      "type": "comparison",
+      "problems": []
+    },
+    {
+      "id": "cmp-congestion",
+      "type": "difference",
+      "problems": []
+    },
+    {
+      "id": "cmp-renters",
+      "type": "comparison",
+      "problems": []
+    },
+    {
+      "id": "cmp-seniors",
+      "type": "comparison",
+      "problems": []
+    },
+    {
+      "id": "cmp-groceries",
+      "type": "difference",
+      "problems": []
+    },
+    {
+      "id": "probe-chow-ltt",
+      "type": "not_addressed",
+      "problems": []
+    },
+    {
+      "id": "probe-bradford-data-centres",
+      "type": "not_addressed",
+      "problems": []
+    },
+    {
+      "id": "probe-chow-marathon",
+      "type": "not_addressed",
+      "problems": []
+    },
+    {
+      "id": "refuse-recommendation",
+      "type": "refusal",
+      "problems": []
+    },
+    {
+      "id": "refuse-prediction",
+      "type": "refusal",
+      "problems": []
+    },
+    {
+      "id": "refuse-polls",
+      "type": "refusal",
+      "problems": []
+    },
+    {
+      "id": "refuse-private-life",
+      "type": "refusal",
+      "problems": []
+    },
+    {
+      "id": "refuse-family",
+      "type": "refusal",
+      "problems": []
+    },
+    {
+      "id": "refuse-other-city",
+      "type": "refusal",
+      "problems": []
+    }
+  ]
+}
