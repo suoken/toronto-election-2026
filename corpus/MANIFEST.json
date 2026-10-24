@@ -1,0 +1,613 @@
+{
+  "corpus_dir": "corpus",
+  "summary": {
+    "file_count": 98,
+    "total_words": 79618,
+    "per_subfolder": {
+      ".": {
+        "files": 2,
+        "words": 1884
+      },
+      "debates": {
+        "files": 2,
+        "words": 10820
+      },
+      "platforms": {
+        "files": 93,
+        "words": 66914
+      },
+      "records": {
+        "files": 1,
+        "words": 0
+      }
+    }
+  },
+  "files": [
+    {
+      "path": "AUDIT.md",
+      "size_bytes": 6180,
+      "sha256": "23f5fafe8f418e9e60ec795e36c5c15174ec0a96451a927cda38990aaccdfa65",
+      "words": 917
+    },
+    {
+      "path": "debates/tvo-mayoral-debate-2026-10-15-transcript.txt",
+      "size_bytes": 58193,
+      "sha256": "34571ea54af41cfeca09d450f8652c70e7bd743f5ebc94ae0e734061f3555cb3",
+      "words": 10820
+    },
+    {
+      "path": "debates/tvo-mayoral-debate-2026-10-15.en.vtt",
+      "size_bytes": 1028336,
+      "sha256": "3e42b28d4b019a118ef1147196d96a28712af6581fd88ca9b7f77d10fb41df2f"
+    },
+    {
+      "path": "platforms/bradford-homepage.md",
+      "size_bytes": 3780,
+      "sha256": "d99e9e22332b56c15d5641cf7d6b1316bfa81c7f9e0986c501c3144bc5338f45",
+      "words": 661
+    },
+    {
+      "path": "platforms/bradford-news-brad-bradford-mayor-to-toronto-moms-this-should-be-the-best-city-in-the-world-to-raise-a-family-right-now-it-doesnt-feel-like-it.md",
+      "size_bytes": 5601,
+      "sha256": "d2c982845b524a25065ae96730af06a0cb6e09f078dbe3690fa517d1993464bf",
+      "words": 966
+    },
+    {
+      "path": "platforms/bradford-news-brad-bradford-mayor-toronto-presents-new-fiscal-framework-to-modernize-torontos-budget.md",
+      "size_bytes": 8294,
+      "sha256": "1faee60ef40067013527821cab8ef2b7e9be9cb981fe2eb7bc835b39a4391e76",
+      "words": 1360
+    },
+    {
+      "path": "platforms/bradford-news-brad-bradford-mayor-toronto-shares-plan-to-restore-promise-of-toronto-for-torontos-youth.md",
+      "size_bytes": 5605,
+      "sha256": "9e26dd0f5ce55783c178b85efc2261b598dfc492bcd17f8232a06de870badb81",
+      "words": 928
+    },
+    {
+      "path": "platforms/bradford-news-brad-bradford-mayor-toronto-will-get-scarborough-moving-by-building-real-rapid-transit-and-removing-red-bus-lanes-scarborough-was-promised-an-lrt-it-got-red-paint.md",
+      "size_bytes": 4220,
+      "sha256": "49365a4aa9cb9d50cdd9465e0f9940a01a7d4bd56f78cfd13008075b8708675b",
+      "words": 698
+    },
+    {
+      "path": "platforms/bradford-news-brad-bradford-mayor-torontos-best-days-are-ahead-of-us-if-we-choose-them.md",
+      "size_bytes": 4401,
+      "sha256": "e8b6ec962edaf36f4ed9169325d4fdf89b8c30e82b7a60dc9f79257c2c1607ef",
+      "words": 750
+    },
+    {
+      "path": "platforms/bradford-news-brad-bradford-mayor-will-get-torontos-subway-back-up-to-speed.md",
+      "size_bytes": 7462,
+      "sha256": "e6db8a9376292564b0e525fdb541f932f960236c32570dc95c1422d42b3b326b",
+      "words": 1321
+    },
+    {
+      "path": "platforms/bradford-news-brad-bradford-on-ttc-subway-slow-zones.md",
+      "size_bytes": 2523,
+      "sha256": "bb7b56b73549edbea27b6ef99517649666d53738ffe50fa219ac87a31f2e7d56",
+      "words": 417
+    },
+    {
+      "path": "platforms/bradford-news-brad-bradford-outlines-his-mayoral-campaign-platform.md",
+      "size_bytes": 4288,
+      "sha256": "2536a58d1df91e2ef4b78df2bf865de993f78c8ceefe2bbbbde89b46e730020a",
+      "words": 696
+    },
+    {
+      "path": "platforms/bradford-news-brad-bradford-pledges-to-reduce-cost-of-living-for-seniors-with-a-property-tax-freeze-water-bill-savings-and-land-transfer-tax-cut.md",
+      "size_bytes": 6953,
+      "sha256": "4ecb36a8b2f27e925564844dd1aa588c82cb0e9752d3974784bf04cc961e1bf0",
+      "words": 1210
+    },
+    {
+      "path": "platforms/bradford-news-brad-bradford-questions-answered-from-the-record.md",
+      "size_bytes": 3525,
+      "sha256": "a11cd7e5ed9b7c782144cf39139f695a05089793ce6658c36d2a76ce6e112306",
+      "words": 421
+    },
+    {
+      "path": "platforms/bradford-news-brad-bradford-toronto-mayor-will-eliminate-torontos-land-transfer-tax-for-the-average-homebuyer.md",
+      "size_bytes": 8334,
+      "sha256": "09a33370c38d4390b6fcc77d94dc8ff7138485ac3e13a0206f9c185ecaad5908",
+      "words": 1382
+    },
+    {
+      "path": "platforms/bradford-news-brad-bradfords-record-as-councillor-for-beacheseast-york.md",
+      "size_bytes": 3957,
+      "sha256": "6673ecf4070ab7c573d54f90631ac6406217d354690f3220ce094a7514ff07ca",
+      "words": 602
+    },
+    {
+      "path": "platforms/bradford-news-bradford-announces-plan-to-expand-police-training-so-toronto-can-train-its-own-police-officers-again.md",
+      "size_bytes": 5905,
+      "sha256": "7fb73474fb3b32dc59fa9eef6954df582e7d6d0853a7fb546f19d636dc388ec9",
+      "words": 966
+    },
+    {
+      "path": "platforms/bradford-news-bradford-announces-toronto-youth-employment-challenge.md",
+      "size_bytes": 5316,
+      "sha256": "b1b7eebed99331de608b81b22ec92604fcfe5680994e495de73bd50f209539b5",
+      "words": 848
+    },
+    {
+      "path": "platforms/bradford-news-bradford-at-torontos-front-door-the-world-arrives-in-four-days-and-city-hall-hasnt-cleaned-up-for-it.md",
+      "size_bytes": 5633,
+      "sha256": "81aee7b6e42a63ec45bad8b404ae48cdbb63120200e3d143840670233227de2e",
+      "words": 931
+    },
+    {
+      "path": "platforms/bradford-news-bradford-calls-for-mandatory-addiction-treatment-now-we-dont-need-another-review.md",
+      "size_bytes": 5149,
+      "sha256": "b3e45fda6bac02261bb55bf2dd4084bf517c89d9dd1bac4e1787750ea961d6ce",
+      "words": 824
+    },
+    {
+      "path": "platforms/bradford-news-bradford-calls-for-urgent-action-to-protect-toronto-jobs-from-new-us-tariffs.md",
+      "size_bytes": 4596,
+      "sha256": "625bbc4817e855cd49566af04a32eb0f7e2269fa11ac0197df278653fa0abb3c",
+      "words": 693
+    },
+    {
+      "path": "platforms/bradford-news-bradford-calls-out-chows-subway-safety-solution-a-fence-with-holes-in-it.md",
+      "size_bytes": 2209,
+      "sha256": "4f8a25e610edce2b48627a674b6029c38871fe41fb660923ba911ead40022502",
+      "words": 331
+    },
+    {
+      "path": "platforms/bradford-news-bradford-commits-to-1000-more-front-line-police-officers.md",
+      "size_bytes": 2136,
+      "sha256": "eb4d4b5aa8d2bb68794135e34d54c14d1e57cbb94b32b060c4930e2e661a7038",
+      "words": 329
+    },
+    {
+      "path": "platforms/bradford-news-bradford-commits-to-start-subway-service-at-6-am-for-next-years-marathon-releases-7-point-get-toronto-moving-plan.md",
+      "size_bytes": 5965,
+      "sha256": "2ac7ac2b4fb5f5311ba1fe35a550525e48dcd3e83aa1f85261dca023ff59b328",
+      "words": 984
+    },
+    {
+      "path": "platforms/bradford-news-bradford-end-the-registration-sprint.md",
+      "size_bytes": 4385,
+      "sha256": "e353cc88e6a8245c23f86e4d1a6aaf03f27396c5d1d5de620005121585365a67",
+      "words": 725
+    },
+    {
+      "path": "platforms/bradford-news-bradford-for-mayor-launches-first-ad-of-2026-race.md",
+      "size_bytes": 2921,
+      "sha256": "d422b2cec65c5c0ca88d11d6aaf9732bdcc000f1972f0c504aadbc5173afb7d8",
+      "words": 463
+    },
+    {
+      "path": "platforms/bradford-news-bradford-launches-campaign-at-packed-etobicoke-rally-as-fundraising-tops-18-million.md",
+      "size_bytes": 3094,
+      "sha256": "9978f31a6cf26e10748197291ff6745370b243a866931e0d2ee048392042a3ed",
+      "words": 487
+    },
+    {
+      "path": "platforms/bradford-news-bradford-motion-calls-on-mayor-chow-to-take-her-seat-on-the-police-board.md",
+      "size_bytes": 2045,
+      "sha256": "39ccd7be27b025dc26a0d782438776121c6557121d5fbbb56b41d2eea23da0bc",
+      "words": 294
+    },
+    {
+      "path": "platforms/bradford-news-bradford-outlines-commitment-to-build-a-city-that-works-for-the-people-who-work-here.md",
+      "size_bytes": 5750,
+      "sha256": "236470985adc69824d1f7018978b4132066e980e873decf2ab02c09370fc7ddd",
+      "words": 965
+    },
+    {
+      "path": "platforms/bradford-news-bradford-pledges-to-make-food-more-affordable-and-accessible-for-toronto-families.md",
+      "size_bytes": 3859,
+      "sha256": "84eab27f1cd2cd38b096089cdf9f558d4be685f6d88f854ebbf168032eece369",
+      "words": 589
+    },
+    {
+      "path": "platforms/bradford-news-bradford-presents-clear-change-in-first-mayoral-debate.md",
+      "size_bytes": 2060,
+      "sha256": "2ec50f6e6efe5ae5ff05f78cd1d0af1068ee406963ea3ac1f969e5094a207fa7",
+      "words": 318
+    },
+    {
+      "path": "platforms/bradford-news-bradford-rallies-toronto-behind-its-makers.md",
+      "size_bytes": 5544,
+      "sha256": "7b24dd3c0620dec6287c630ba7288042c06c590f3d30612f69d87142b44d9231",
+      "words": 890
+    },
+    {
+      "path": "platforms/bradford-news-bradford-releases-his-plan-for-renters-keep-your-home-cool-your-home-build-more-homes.md",
+      "size_bytes": 11064,
+      "sha256": "22b028451a032e1b0105d8cc89594c8d9e834411c8715aa5b6125a6a5f6b1387",
+      "words": 1749
+    },
+    {
+      "path": "platforms/bradford-news-bradford-releases-plan-for-first-100-days-5-priorities-starting-with-public-safety.md",
+      "size_bytes": 6896,
+      "sha256": "9e1b83373a73e6eaf173d02d0be047b2f0d695afdeb0602748d7fc3bbe4bfc11",
+      "words": 1193
+    },
+    {
+      "path": "platforms/bradford-news-bradford-unveils-campaign-vision-for-a-toronto-we-can-be-proud-of-again.md",
+      "size_bytes": 4742,
+      "sha256": "81fec0e72dd2b98f651e53fbf61b51745685c902059845cee719abbf4c9fea64",
+      "words": 790
+    },
+    {
+      "path": "platforms/bradford-news-bradford-unveils-plan-to-clean-up-make-safe-and-rename-yonge-and-dundas-as-toronto-square.md",
+      "size_bytes": 6772,
+      "sha256": "a26e3c4e422dd809ae6acf53e4fc1e1dcf42a6bcf7179917a3c200af5311eb67",
+      "words": 1079
+    },
+    {
+      "path": "platforms/bradford-news-bradford-when-im-mayor-the-eglinton-east-lrt-is-my-top-transit-priority.md",
+      "size_bytes": 4619,
+      "sha256": "cc907f036b599676cedd89211b49e62484cbd5286a776848fc51b797832e1039",
+      "words": 761
+    },
+    {
+      "path": "platforms/bradford-news-bradford-will-freeze-property-taxes.md",
+      "size_bytes": 4588,
+      "sha256": "bc7729d365c48423b718bf423b41c138da042ca307102f3ce952cf5d655538cb",
+      "words": 783
+    },
+    {
+      "path": "platforms/bradford-news-e-bikes.md",
+      "size_bytes": 5378,
+      "sha256": "10cbbb7c7f7bbf4ad835f26c41aa8f4e8ab7637754081d1a3abc259575223084",
+      "words": 815
+    },
+    {
+      "path": "platforms/bradford-news-etobicoke-bike-lanes.md",
+      "size_bytes": 3809,
+      "sha256": "15cb86f4e8c24ca2c5f8a5673c4d445d7239800f1bc951f783f0e514a2cfc563",
+      "words": 606
+    },
+    {
+      "path": "platforms/bradford-news-former-deputy-mayor-jennifer-mckelvie-endorses-brad-bradford-for-mayor.md",
+      "size_bytes": 2401,
+      "sha256": "051865ff6fce7e9ff3982342063d94a317ace22899204be7a5865ff94ba73438",
+      "words": 355
+    },
+    {
+      "path": "platforms/bradford-news-how-brad-bradford-pays-for-his-platform-toronto-2026-fiscal-plan-explained.md",
+      "size_bytes": 16035,
+      "sha256": "ea4989335ec14a726cb56074963bd7df5b2bce9650fcf97285dfaee4219c8e63",
+      "words": 2631
+    },
+    {
+      "path": "platforms/bradford-news-if-you-pay-rent-you-pay-property-tax-bradford-brings-his-tax-freeze-to-a-young-renting-family-in-north-york.md",
+      "size_bytes": 4388,
+      "sha256": "58b5539176e7ec3bdf6c1e4d86525fea0f49f6a5295c61ebd0ddc3953fe33c87",
+      "words": 766
+    },
+    {
+      "path": "platforms/bradford-news-its-your-money-brad-bradford-mayor-toronto-is-giving-it-back.md",
+      "size_bytes": 9024,
+      "sha256": "691be0ebd6cc2e133c550c41c6b61540c45a2c77915de3f67c8097146b1fa2e8",
+      "words": 1487
+    },
+    {
+      "path": "platforms/bradford-news-olivia-chow-doesnt-want-to-run-on-her-record.md",
+      "size_bytes": 3256,
+      "sha256": "f28e836f8dc060a21ba321b7c66b9d6f49f0e07e8a7de7bacd0b374a90d93851",
+      "words": 549
+    },
+    {
+      "path": "platforms/bradford-news-olivia-chow-says-she-found-788-million-in-savings-her-budget-is-up-nearly-3-billion-which-is-it.md",
+      "size_bytes": 5811,
+      "sha256": "a5b272b8d10b0a1328246cacd5af15c027a2834df5520366ec670032646b6714",
+      "words": 945
+    },
+    {
+      "path": "platforms/bradford-news-olivia-chow-says-toronto-is-living-up-to-its-full-potential-bradford-says-no-the-families-who-built-this-city-deserve-better.md",
+      "size_bytes": 3110,
+      "sha256": "3ef0e20ef8b27631c6fdc25556eb19d0e0e939545bd6f293982a398ee10013ee",
+      "words": 519
+    },
+    {
+      "path": "platforms/bradford-news-peoples-feelings-arent-statistics-bradford-meets-with-residents-impacted-by-weekend-gun-violence.md",
+      "size_bytes": 3225,
+      "sha256": "579766c46645337f8e47062a9d367a4370fb6b0fae93604fe8bde32e83820438",
+      "words": 521
+    },
+    {
+      "path": "platforms/bradford-news-the-province-sent-more-money-than-ever-then-chow-raised-taxes-20-where-did-the-money-go.md",
+      "size_bytes": 4090,
+      "sha256": "3abd01aeb8e59e0fbffe161845e5a34bde8ad7f33625578b37eb2ba3fa29b62c",
+      "words": 690
+    },
+    {
+      "path": "platforms/bradford-news-thieves-hit-a-food-charity-twice-in-one-year-bradford-calls-on-toronto-to-help-second-harvest.md",
+      "size_bytes": 2983,
+      "sha256": "eb8895659268b7dc6baa9e7d1ac57aaf3b191eef29b5e3b358cde738186e454e",
+      "words": 475
+    },
+    {
+      "path": "platforms/bradford-news-torontos-comeback-starts-now-brad-bradford-launches-257-tour-of-all-25-wards-in-the-final-7-days-of-the-mayor-campaign.md",
+      "size_bytes": 4999,
+      "sha256": "a7c689f0a6d0e4f460367b9eb41562befb565a17fa1420f9190968b0c9c7fbc7",
+      "words": 848
+    },
+    {
+      "path": "platforms/bradford-news-torontos-water-stays-public-brad-bradfords-water-plan-explained.md",
+      "size_bytes": 11601,
+      "sha256": "d7578fc46b5bd62c879e224a18d60c79b2f3dcb91b846f6d684013820106181e",
+      "words": 1889
+    },
+    {
+      "path": "platforms/bradford-news-torontos-water-stays-public-the-law-says-so.md",
+      "size_bytes": 4536,
+      "sha256": "f897dfacbc20e5327243e46cce097154820de1064dbd20d97b8ff826c845b2d7",
+      "words": 725
+    },
+    {
+      "path": "platforms/bradford-news-under-brad-bradfords-plan-torontos-water-stays-public-100-ndp-mayor-chow-knows-it.md",
+      "size_bytes": 5071,
+      "sha256": "874d732c22710a7c33cecb575f036f310975602046d04796d3d634ba8befeac0",
+      "words": 815
+    },
+    {
+      "path": "platforms/bradford-news-why-do-olivia-chow-david-miller-and-progress-toronto-keep-lying-about-torontos-water.md",
+      "size_bytes": 3563,
+      "sha256": "ed68763fddae5740ab8d8852cae7e58f001cc22288f46a2b9c4391c83985b2bd",
+      "words": 512
+    },
+    {
+      "path": "platforms/bradford-news-will-the-real-olivia-chow-please-stand-up.md",
+      "size_bytes": 4013,
+      "sha256": "af9fd1dde50ab29ca83fdbd3fc4a97c3b51fcbf08382164843d036242e2ec553",
+      "words": 660
+    },
+    {
+      "path": "platforms/chow-10rides.md",
+      "size_bytes": 1088,
+      "sha256": "57ea4acddcd40f6606876172de279d40aad0c9fe9153397674e7ae0c23348cd9",
+      "words": 185
+    },
+    {
+      "path": "platforms/chow-40rides.md",
+      "size_bytes": 1007,
+      "sha256": "8d6112a1ee3fd0d21b1c0b46f24325ea11f0411715fa935b5e251e95497d5846",
+      "words": 177
+    },
+    {
+      "path": "platforms/chow-chow_shares_her_vision_for_toronto_at_toronto_region_board_of_trade_debate.md",
+      "size_bytes": 3093,
+      "sha256": "496beb5abc11cb75ac44902bceacc89abf72c32ebd3299954f66413311a05a2e",
+      "words": 490
+    },
+    {
+      "path": "platforms/chow-datacentres.md",
+      "size_bytes": 855,
+      "sha256": "5f2fb287bd01b3ee3731e689414e1b24f2e7a35ed138bfdb7690d2a65d52544d",
+      "words": 149
+    },
+    {
+      "path": "platforms/chow-homepage.md",
+      "size_bytes": 959,
+      "sha256": "8e4e0f6287685e722296673284c1073ab162ff97021646ab28bd9617a1e46245",
+      "words": 158
+    },
+    {
+      "path": "platforms/chow-news.md",
+      "size_bytes": 2972,
+      "sha256": "65023f7080ad6150141ecd1276fb04c5c3cca16ab509aba603c2b9355eb9a5ce",
+      "words": 491
+    },
+    {
+      "path": "platforms/chow-olivia_chow_asks_torontonians_to_move_forward_together.md",
+      "size_bytes": 2828,
+      "sha256": "90c81a335ad3a2f6a5224ed6d5456d18fa6aba0ab70cb52f76e1945a5ccb1ca3",
+      "words": 458
+    },
+    {
+      "path": "platforms/chow-olivia_chow_brings_her_vision_for_toronto_to_first_mayoral_debate.md",
+      "size_bytes": 3387,
+      "sha256": "2afbfb20d5cec2c6907832a7a84e7ea7eba8c7606bf620be00ad7968d302f2dd",
+      "words": 558
+    },
+    {
+      "path": "platforms/chow-olivia_chow_commits_to_funding_youth_safety_programs_that_make_neighbourhoods_safer.md",
+      "size_bytes": 4483,
+      "sha256": "86055b3b8c41222ffb5e5b29beaa424896b0920146af4bd8bbcb550dd0b1e0f8",
+      "words": 689
+    },
+    {
+      "path": "platforms/chow-olivia_chow_delivered_the_busway.md",
+      "size_bytes": 2565,
+      "sha256": "08ad5a77b332973efa5ae6206f2d81ae9fb0bc1b5a66de56d2a59fc33089e600",
+      "words": 409
+    },
+    {
+      "path": "platforms/chow-olivia_chow_is_creating_nearly_40_000_jobs.md",
+      "size_bytes": 3174,
+      "sha256": "1edf501c072c13787b91e147a549057834ff6432d2c35ee35355bd6fb4e13932",
+      "words": 500
+    },
+    {
+      "path": "platforms/chow-olivia_chow_is_making_neighborhoods_safer.md",
+      "size_bytes": 4971,
+      "sha256": "6c6069f9b83d4cb6c3e5ca6610875123dcbc1757168bccad8d654ed1393f78ad",
+      "words": 782
+    },
+    {
+      "path": "platforms/chow-olivia_chow_kicks_off_re_election_campaign.md",
+      "size_bytes": 7562,
+      "sha256": "9342bd482554bca53a75d7968a9108a254892746215cba56195a4c42355ccddb",
+      "words": 1310
+    },
+    {
+      "path": "platforms/chow-olivia_chow_lays_out_a_clear_choice_for_toronto_at_latest_debate.md",
+      "size_bytes": 2785,
+      "sha256": "a68165b747369b2d0b34024b9577dbb34e57b21e6d7531d99f33c905e888b68d",
+      "words": 468
+    },
+    {
+      "path": "platforms/chow-olivia_chow_leads_roundtable_on_building_a_more_caring_toronto.md",
+      "size_bytes": 3269,
+      "sha256": "cd8ab43f9cdf09433d4db1097899ce4bd833251bf33d8121b94ea3200cecf312",
+      "words": 505
+    },
+    {
+      "path": "platforms/chow-olivia_chow_receives_liuna_183_endorsement.md",
+      "size_bytes": 4296,
+      "sha256": "35da1d7923436f43440249d76ade5c676b7dc5bf0041eff99497447feff98229",
+      "words": 662
+    },
+    {
+      "path": "platforms/chow-olivia_chow_releases_final_campaign_ad_after_cp24_debate.md",
+      "size_bytes": 3160,
+      "sha256": "b6560fb42098f11821e769edb4de1e7c42bb37c21a63b89003fed8c9de3e3a2e",
+      "words": 518
+    },
+    {
+      "path": "platforms/chow-olivia_chow_s_plan_to_lower_your_day_to_day_costs.md",
+      "size_bytes": 3474,
+      "sha256": "6c839e7ca0ec709f7d283117eb85f71d6c446a7743bfc5b6e9ce35b1c81fb9dd",
+      "words": 561
+    },
+    {
+      "path": "platforms/chow-olivia_chow_s_plan_to_lower_your_grocery_bill.md",
+      "size_bytes": 3496,
+      "sha256": "37b84b2b728d2db03a10526d738823384d1fb1564f548bf8aae5613afbce31ef",
+      "words": 560
+    },
+    {
+      "path": "platforms/chow-olivia_chow_s_scarborough_vision_shines_at_debate.md",
+      "size_bytes": 2615,
+      "sha256": "bc8d8ebb584edd32d561f9231b8180ee7c8d5fb1b2f45c776f0369c075561b39",
+      "words": 402
+    },
+    {
+      "path": "platforms/chow-olivia_chow_s_vision_for_a_more_caring_affordable_and_safer_city.md",
+      "size_bytes": 7423,
+      "sha256": "d4f4204a584d5d2838f17a2b7b19770dd1facd842c5cfc46c7b0f6f80e1a132e",
+      "words": 1290
+    },
+    {
+      "path": "platforms/chow-olivia_chow_shares_vision_for_scarborough.md",
+      "size_bytes": 3818,
+      "sha256": "cae82d32e8b2ac5d7ef83353651a835c925a827a854cee60b965b1c869a6c781",
+      "words": 594
+    },
+    {
+      "path": "platforms/chow-olivia_chow_shares_vision_for_scarborough_at_rally.md",
+      "size_bytes": 8479,
+      "sha256": "12187ea478165afd1529b5fc98433eb6d629569c66deb3a9a068684a736ffbbc",
+      "words": 1447
+    },
+    {
+      "path": "platforms/chow-olivia_chow_to_break_ground_on_10_000_new_rental_homes.md",
+      "size_bytes": 3317,
+      "sha256": "ae67a26944fa4e94ed6fbcd59733e4a0a2120c7569fc7d6ab0e16ecadbe81d2a",
+      "words": 534
+    },
+    {
+      "path": "platforms/chow-olivia_chow_will_always_stand_up_for_renters.md",
+      "size_bytes": 3571,
+      "sha256": "256432c5efc381ae4ec04ee96c0953f81ab7010eceae7c3a54fae7235b43b358",
+      "words": 583
+    },
+    {
+      "path": "platforms/chow-olivia_chow_will_build_a_more_affordable_city_without_giving_up_toronto_s_drinking_water.md",
+      "size_bytes": 4982,
+      "sha256": "c81e4ec40a65b3455fbd560e6ad14a29774dfdd132e66af29dbf5967ba8de44e",
+      "words": 794
+    },
+    {
+      "path": "platforms/chow-olivia_chow_will_create_a_more_senior_friendly_city.md",
+      "size_bytes": 3111,
+      "sha256": "9b09eeae73afb048bc169512275607b3777ea5d1b310622001e4becbf672f345",
+      "words": 502
+    },
+    {
+      "path": "platforms/chow-olivia_chow_will_create_more_free_family_activities.md",
+      "size_bytes": 3311,
+      "sha256": "39331c10a55095b4115b4f4ec9df133fc669a7db4c72812ac82ec17282106a68",
+      "words": 543
+    },
+    {
+      "path": "platforms/chow-olivia_chow_will_create_more_local_jobs_for_scarborough_youth.md",
+      "size_bytes": 4281,
+      "sha256": "559ac88f4dd0233a42914687d753fe07259c749b9baa1015c99da2860047ad25",
+      "words": 664
+    },
+    {
+      "path": "platforms/chow-olivia_chow_will_deliver_better_transit_for_scarborough.md",
+      "size_bytes": 4433,
+      "sha256": "4174a3ef7a190d0b94733049d19e3c1ee2a6fdd4cdc0d57ff31ec8e647340f01",
+      "words": 717
+    },
+    {
+      "path": "platforms/chow-olivia_chow_will_go_after_slumlords_with_a_new_enforcement_team.md",
+      "size_bytes": 3080,
+      "sha256": "b4bf95d51273f6f87825202c3582d0a82db96b46d93312d6db0101578fe9e0fd",
+      "words": 494
+    },
+    {
+      "path": "platforms/chow-olivia_chow_will_make_ttc_rides_free_after_10_trips_each_week.md",
+      "size_bytes": 3287,
+      "sha256": "0cceff381bb5cb2a54ce396e78d7741469fe3862540d968d9cab473a08b0e2b6",
+      "words": 579
+    },
+    {
+      "path": "platforms/chow-olivia_chow_will_provide_lunch_in_schools_to_give_parents_grocery_bill_relief.md",
+      "size_bytes": 3086,
+      "sha256": "9532632d80837fb4f21ae2d0b9f99d07577f564d2de9cd3ddd14dacbc9a1d2b5",
+      "words": 501
+    },
+    {
+      "path": "platforms/chow-oscar_winner_sarah_polley.md",
+      "size_bytes": 2828,
+      "sha256": "425a62e77c9191a5284e5fee1af103251613ed5683242132fea082e9952bf179",
+      "words": 446
+    },
+    {
+      "path": "platforms/chow-plan.md",
+      "size_bytes": 13926,
+      "sha256": "05234403b5dcd880a6275b210577b75485b43f040111e2888ae3bd8dc9aba4e3",
+      "words": 2237
+    },
+    {
+      "path": "platforms/chow-protect_water.md",
+      "size_bytes": 964,
+      "sha256": "de790f16d95327001c7d7dd9cd454c7283b7cc26109180f1672c11775cfeeaf4",
+      "words": 159
+    },
+    {
+      "path": "platforms/chow-scarborough.md",
+      "size_bytes": 835,
+      "sha256": "8332b3e345982d5733ad6043425fe4ede464c26db8612ff8c7ca013a642faf07",
+      "words": 129
+    },
+    {
+      "path": "platforms/chow-slumlords.md",
+      "size_bytes": 774,
+      "sha256": "4a27796c2ea8a3f26d34e9e53eb00d16af78700b60b37566fe4477862e5a1908",
+      "words": 127
+    },
+    {
+      "path": "platforms/chow-team_canada.md",
+      "size_bytes": 1057,
+      "sha256": "5e300268b22bf368f9d9412c7affc6430e2fca8d738225ddb51437f52989b555",
+      "words": 175
+    },
+    {
+      "path": "platforms/chow-waterfront.md",
+      "size_bytes": 981,
+      "sha256": "8eddf1b7fbd38c5407941061a62906485a3c74201d9de4dddc3f4fd3773383e1",
+      "words": 155
+    },
+    {
+      "path": "records/member-voting-record-2022-2026.csv",
+      "size_bytes": 12028242,
+      "sha256": "4ea96c43fad9f4035bb5665efa4c079a4b917857f6949f113070669e60f8110f"
+    },
+    {
+      "path": "source-inventory-news-social.md",
+      "size_bytes": 6979,
+      "sha256": "0ed3831e356c7bad24f303479ab4e7735209966745eaa6446cd4700c69fbe10f",
+      "words": 967
+    }
+  ]
+}
