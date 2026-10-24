@@ -1,0 +1,39 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "toronto-comparer"
+version = "0.1.0"
+description = "Toronto Candidate Policy Comparer — cited, compare-don't-recommend answers about election candidates"
+requires-python = ">=3.11"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "pydantic",
+    "pydantic-settings",
+    "python-dotenv",
+    "sqlalchemy",
+    "rank-bm25",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "httpx",
+]
+# Local embedding model (default path; heavy — pulls torch).
+local = [
+    "sentence-transformers",
+]
+# LLM providers (only used when the matching API key is in the env).
+llm = [
+    "anthropic",
+    "openai",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

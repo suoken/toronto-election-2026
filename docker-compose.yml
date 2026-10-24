@@ -1,0 +1,14 @@
+services:
+  db:
+    image: pgvector/pgvector:pg16
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_USER: ${POSTGRES_USER:-comparer}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:-comparer}
+      POSTGRES_DB: ${POSTGRES_DB:-comparer}
+    volumes:
+      - comparer_pgdata:/var/lib/postgresql/data
+
+volumes:
+  comparer_pgdata:
