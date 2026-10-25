@@ -1,6 +1,7 @@
 """FastAPI application for the Toronto Candidate Policy Comparer.
 
 Routes:
+* ``GET /`` — the single-page web UI (static/index.html).
 * ``GET /health`` — liveness.
 * ``POST /ask`` — runs the answering pipeline (classify → per-candidate
   balanced retrieval → generation → critic pass) and returns the
@@ -10,17 +11,26 @@ Routes:
   product exists to prevent.
 """
 
+from pathlib import Path
+
 from fastapi import FastAPI
-from fastapi.responses import JSONResponse
+from fastapi.responses import FileResponse, JSONResponse
 from pydantic import BaseModel
 
 from .answer import CorpusNotReady, get_pipeline
 
 app = FastAPI(title="Toronto Candidate Policy Comparer")
 
+_INDEX = Path(__file__).parent / "static" / "index.html"
+
 
 class AskRequest(BaseModel):
     question: str
+
+
+@app.get("/")
+def index() -> FileResponse:
+    return FileResponse(_INDEX, media_type="text/html")
 
 
 @app.get("/health")

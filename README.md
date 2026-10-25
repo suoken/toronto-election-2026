@@ -96,7 +96,7 @@ pip install -e ".[dev]"
 
 python -m comparer.ingest        # build chunks from the corpus
 python -m comparer.store load    # load chunks into the store
-uvicorn comparer.main:app        # POST /ask, GET /health
+uvicorn comparer.main:app        # web UI at /, POST /ask, GET /health
 
 pytest                           # 7 tests
 python evals/run_evals.py        # golden-set eval → evals/latest-report.json
@@ -124,7 +124,8 @@ extra (sentence-transformers) and re-embedding switches to MiniLM.
 
 ```
 src/comparer/   pipeline: schema, chunking, ingest, store, embeddings,
-                retrieval, prompts, generation, critic, answer, API
+                retrieval, prompts, generation, critic, answer, API,
+                and the single-page web UI (static/index.html)
 corpus/         platforms, debates, records, audit
 evals/          golden set + eval harness + latest report
 tests/          chunking, retrieval, critic, health
