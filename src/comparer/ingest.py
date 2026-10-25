@@ -21,6 +21,13 @@ Reads:
   chunks carry candidate ``"unknown"`` — they are indexed and searchable
   but never attributed to a candidate the transcript does not name).
 
+* ``corpus/records/`` — the Toronto Open Data council voting record.
+  The unsplit CSV is read when present; otherwise the four split parts
+  (``*-part1.csv`` … ``*-part4.csv``, each with a repeated header) are
+  read in order. Only the two mayoral candidates' rows are chunked —
+  one chunk per member per vote-event, stating that member's own vote
+  (see :func:`comparer.chunking.chunk_voting_records`).
+
 Writes ``data/chunks.jsonl`` (one JSON object per chunk).
 
     python -m comparer.ingest [--corpus-dir corpus] [--out data/chunks.jsonl]
@@ -29,12 +36,19 @@ Writes ``data/chunks.jsonl`` (one JSON object per chunk).
 from __future__ import annotations
 
 import argparse
+import csv
 import json
 import re
 from collections import Counter
 from pathlib import Path
 
-from .chunking import chunk_markdown_document, chunk_transcript, parse_transcript_text, parse_vtt
+from .chunking import (
+    chunk_markdown_document,
+    chunk_transcript,
+    chunk_voting_records,
+    parse_transcript_text,
+    parse_vtt,
+)
 from .schema import Chunk
 
 _HEADER_KEYS = ("source", "source url", "fetched", "title", "published", "issue category")
@@ -127,6 +141,29 @@ def ingest_debates(corpus_dir: Path, fetched_date: str = "2026-10-23") -> list[C
     return chunks
 
 
+def ingest_records(corpus_dir: Path, fetched_date: str = "2026-10-23") -> list[Chunk]:
+    records_dir = corpus_dir / "records"
+    if not records_dir.exists():
+        return []
+    whole = records_dir / "member-voting-record-2022-2026.csv"
+    if whole.exists():
+        files = [whole]
+    else:
+        files = sorted(records_dir.glob("member-voting-record-2022-2026-part*.csv"))
+    rows: list[dict] = []
+    for path in files:
+        with path.open(newline="", encoding="utf-8") as fh:
+            rows.extend(csv.DictReader(fh))
+    if not rows:
+        return []
+    return chunk_voting_records(
+        rows,
+        source_url="local:member-voting-record-2022-2026.csv",
+        fetched_date=fetched_date,
+        doc_title="Toronto Council Voting Record 2022-2026 (Toronto Open Data)",
+    )
+
+
 def main(argv: list[str] | None = None) -> None:
     parser = argparse.ArgumentParser(prog="comparer.ingest")
     parser.add_argument("--corpus-dir", default="corpus")
@@ -134,7 +171,7 @@ def main(argv: list[str] | None = None) -> None:
     args = parser.parse_args(argv)
 
     corpus_dir = Path(args.corpus_dir)
-    chunks = ingest_platforms(corpus_dir) + ingest_debates(corpus_dir)
+    chunks = ingest_platforms(corpus_dir) + ingest_debates(corpus_dir) + ingest_records(corpus_dir)
 
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)

@@ -21,9 +21,9 @@ three with an eval harness.
   verbatim cited sentences, with local embeddings. Setting an LLM API
   key in `.env` switches generation to a provider model (the interface
   is provider-swappable); that path is written but not yet eval'd.
-- Corpus: 638 chunks — Chow platform 130, Bradford platform 277,
-  TVO debate 231 (see "Known limits" for why debate chunks are
-  unattributed).
+- Corpus: 3,894 chunks — Chow platform 130, Bradford platform 277,
+  TVO debate 231, council voting records 3,256 (see "Known limits"
+  for why debate chunks are unattributed).
 
 ## Eval results
 
@@ -113,9 +113,10 @@ extra (sentence-transformers) and re-embedding switches to MiniLM.
   speaker changes but never name speakers, so per-candidate answers
   currently come from platforms. Speaker attribution for debates is
   the top roadmap item, along with the remaining debate transcripts,
-  a voting-record chunker (the record tier is schema-ready but not yet
-  ingested), Bradford publication dates in chunk metadata, and a
-  held-out golden set.
+  Bradford publication dates in chunk metadata, and a held-out
+  golden set. The voting-record tier is chunked (3,256 chunks, one per
+  candidate per vote-event), but the golden set has no record
+  questions yet — record retrieval is verified live, not by evals.
 - Post-election direction: the same pipeline over council records —
   "how did my councillor vote on X?" — so the project outlives the
   campaign.

@@ -294,6 +294,89 @@ def parse_vtt(text: str) -> list[Turn]:
     return turns
 
 
+# --------------------------------------------------------------------------
+# Council voting records
+# --------------------------------------------------------------------------
+
+# The comparer's candidates in the Toronto Open Data voting record, keyed
+# by (first name, last name) as they appear in the CSV.
+RECORD_MEMBERS = {
+    ("Olivia", "Chow"): ("chow", "Olivia Chow"),
+    ("Brad", "Bradford"): ("bradford", "Brad Bradford"),
+}
+
+
+def _record_vote_sentence(display_name: str, vote: str) -> str:
+    if vote == "Yes":
+        return f"{display_name} voted Yes."
+    if vote == "No":
+        return f"{display_name} voted No."
+    if vote.startswith("Absent") and "Interest" in vote:
+        return f"{display_name} declared an interest and did not vote."
+    if vote.startswith("Absent"):
+        return f"{display_name} was absent; no vote was recorded."
+    return f"{display_name}'s recorded vote was: {vote}."
+
+
+def chunk_voting_records(
+    rows: list[dict],
+    *,
+    source_url: str,
+    fetched_date: str,
+    doc_title: str,
+    id_prefix: str = "record",
+    members: dict | None = None,
+) -> list[Chunk]:
+    """Chunk a council voting record (Toronto Open Data CSV rows).
+
+    The unit is one member's vote in one vote-event (an agenda item under
+    one motion). Each chunk states exactly one candidate's own vote, so a
+    chunk retrieved for one candidate can never carry the other
+    candidate's vote as its claim — the same attribution invariant the
+    transcript chunker enforces for speakers. Absences are chunks too,
+    phrased as absences: they are evidence about participation, never
+    silently dropped and never presented as No votes.
+    """
+    members = members if members is not None else RECORD_MEMBERS
+    chunks: list[Chunk] = []
+    for row in rows:
+        member = members.get((row.get("First Name", ""), row.get("Last Name", "")))
+        if member is None:
+            continue
+        candidate, display_name = member
+
+        date = row.get("Date/Time", "")[:10]
+        committee = row.get("Committee", "City Council")
+        item = row.get("Agenda Item #", "")
+        title = row.get("Agenda Item Title", "")
+        motion = row.get("Motion Type", "")
+        result = row.get("Result", "")
+        description = row.get("Vote Description", "")
+
+        text = (
+            f"On {date}, {committee} voted on {item} \u201c{title}\u201d "
+            f"(motion: {motion}). "
+            + _record_vote_sentence(display_name, row.get("Vote", ""))
+            + f" The motion result was: {result}."
+        )
+        if description:
+            text += f" Vote description: {description}."
+        chunks.append(
+            Chunk(
+                id=f"{candidate}-{id_prefix}-{len(chunks):05d}",
+                text=text,
+                candidate=candidate,
+                source_type="record",
+                source_url=source_url,
+                fetched_date=fetched_date,
+                doc_title=doc_title,
+                chunk_index=len(chunks),
+                heading_path=[committee, item],
+            )
+        )
+    return chunks
+
+
 def chunk_transcript(
     turns: list[Turn],
     *,
