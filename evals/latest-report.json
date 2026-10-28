@@ -2,17 +2,17 @@
   "metrics": {
     "embedder": "hashing",
     "generator": "extractive",
-    "questions": 31,
+    "questions": 35,
     "faithfulness_pct": 100.0,
-    "claims_delivered": 124,
-    "claims_faithful": 124,
+    "claims_delivered": 152,
+    "claims_faithful": 152,
     "balance_coverage_pct": 100.0,
-    "balance_items": 9,
+    "balance_items": 12,
     "refusal_correct_pct": 100.0,
     "false_refusal_rate_pct": 0.0,
     "status_accuracy_pct": 100.0,
     "retrieval_hit_rate_pct": 100.0,
-    "critic_claims_checked": 124,
+    "critic_claims_checked": 152,
     "critic_claims_flagged": 0
   },
   "items": [
@@ -169,6 +169,26 @@
     {
       "id": "refuse-other-city",
       "type": "refusal",
+      "problems": []
+    },
+    {
+      "id": "rec-bradford-dev-charges",
+      "type": "fact",
+      "problems": []
+    },
+    {
+      "id": "rec-transform-yonge",
+      "type": "difference",
+      "problems": []
+    },
+    {
+      "id": "rec-2026-budget",
+      "type": "difference",
+      "problems": []
+    },
+    {
+      "id": "rec-police-board-seat",
+      "type": "difference",
       "problems": []
     }
   ]

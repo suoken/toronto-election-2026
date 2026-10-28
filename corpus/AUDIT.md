@@ -26,7 +26,7 @@ The corpus is real, public, and usable tonight — with two honest gaps: five of
 
 ### Voting records — acquired and chunked (2026-10-25)
 - Toronto Open Data, "Members of Toronto City Council – Voting Record": `corpus/records/member-voting-record-2022-2026.csv` — 46,815 vote rows, 2022-11-23 → 2026-08-05, 30 members, fields include agenda item # (motion id), date/time, member, vote, result. Chow: 1,420 rows; Bradford: 1,836 rows.
-- Chunked 2026-10-25: one chunk per candidate per vote-event (3,256 record chunks), each stating only that candidate's own vote; absences are phrased as absences, never as No votes. The golden eval set has no record questions yet, so record retrieval is verified live, not by the eval suite.
+- Chunked 2026-10-25: one chunk per candidate per vote-event (3,256 record chunks), each stating only that candidate's own vote; absences are phrased as absences, never as No votes. Record retrieval was initially verified live only; 4 record questions were merged into the golden set 2026-10-28, so the tier is now covered by the eval suite (smoke-test depth).
 
 ### News & social — inventoried, not bulk-collected (by design)
 - Free and covering the race: CBC Toronto, CP24, CTV Toronto, Global News, CityNews, TVO.
@@ -40,19 +40,19 @@ The corpus is real, public, and usable tonight — with two honest gaps: five of
 - **Generation: extractive mode.** No LLM API key is configured, so answers are composed from verbatim cited sentences (no synthesis, no difference summary). Adding `ANTHROPIC_API_KEY` to `.env` switches to the LLM path with the same critic pass; that path is written but untested.
 - **Tests:** 7 passed (speaker-span invariant, heading paths, retrieval balance under 20:2 volume skew, critic vs. unsupported/fake/misattributed citations, API).
 
-### Eval results (golden set: 31 questions — 13 facts, 9 contested, 3 "not addressed" probes, 6 refusals)
+### Eval results (golden set: 35 questions — 14 facts, 12 contested, 3 "not addressed" probes, 6 refusals; re-run 2026-10-28)
 | Metric | Result | Caveat |
 |---|---|---|
-| Faithfulness | 100% (124/124 claims) | Partly structural: extractive claims are verbatim sentences carrying their own citations. Expect this to drop — and start meaning more — when the LLM path paraphrases. |
-| Balance coverage | 100% (9/9) | On the golden set. |
+| Faithfulness | 100% (152/152 claims) | Partly structural: extractive claims are verbatim sentences carrying their own citations. Expect this to drop — and start meaning more — when the LLM path paraphrases. |
+| Balance coverage | 100% (12/12) | On the golden set. |
 | Refusal correctness | 100% (6/6), 0 false refusals | Includes "Who should I vote for?" → refused, per the product boundary. |
-| Per-candidate status accuracy | 100% (47/47) | Required a real fix: an IDF-weighted coverage gate (≥50% of question vocabulary) to separate "Chow on the land transfer tax" (absent) from "Chow on property taxes" (present) — raw similarity could not. |
-| Retrieval hit-rate (proxy) | 100% (22/22) | Golden-set calibrated; a held-out set is needed before treating any of these as generalization. |
+| Per-candidate status accuracy | 100% (55/55) | Required a real fix: an IDF-weighted coverage gate (≥50% of question vocabulary) to separate "Chow on the land transfer tax" (absent) from "Chow on property taxes" (present) — raw similarity could not. |
+| Retrieval hit-rate (proxy) | 100% (26/26) | Golden-set calibrated; a held-out set is needed before treating any of these as generalization. |
 
 ## Gaps & next steps (in order)
 1. Debate transcripts ×6 — retry 2026-10-24 03:30 ET; fallback is a signed-in browser session.
 2. Speaker attribution for debate chunks — captions don't name speakers; needs either diarization or manual labeling of turn blocks before debates can feed per-candidate answers.
-3. ~~Voting-record chunker~~ — done 2026-10-25 (3,256 record chunks). Next for this tier: record questions in the golden set.
+3. ~~Voting-record chunker~~ — done 2026-10-25 (3,256 record chunks). ~~Record questions in the golden set~~ — done 2026-10-28 (4 questions merged, golden set now 35).
 4. Bradford publication dates into chunk metadata → recency handling for superseded positions.
 5. sentence-transformers install on a healthy connection → re-embed, re-run evals.
 6. LLM API key (Ken's decision) → enables synthesized answers + difference summaries; re-run evals and expect faithfulness to become a real measurement.

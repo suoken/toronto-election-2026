@@ -16,7 +16,7 @@ three with an eval harness.
 
 - Core pipeline built and evaluated (October 2026, ahead of the
   October 26 election): ingestion, chunking, hybrid retrieval,
-  generation, critic pass, and a 31-question golden-set eval.
+  generation, critic pass, and a 35-question golden-set eval.
 - Runs in **extractive mode** by default: answers are composed from
   verbatim cited sentences, with local embeddings. Setting an LLM API
   key in `.env` switches generation to a provider model (the interface
@@ -27,16 +27,17 @@ three with an eval harness.
 
 ## Eval results
 
-Latest run (`evals/latest-report.json`, golden set: 13 fact questions,
-9 contested questions, 3 "not addressed" probes, 6 refusal cases):
+Latest run (`evals/latest-report.json`, golden set: 14 fact questions,
+12 contested questions, 3 "not addressed" probes, 6 refusal cases —
+including 4 voting-record questions added 2026-10-28):
 
 | Metric | Result |
 |---|---|
-| Faithfulness (claims supported by their citation) | 100% (124/124) |
-| Balance coverage (both candidates answered on contested items) | 100% (9/9) |
+| Faithfulness (claims supported by their citation) | 100% (152/152) |
+| Balance coverage (both candidates answered on contested items) | 100% (12/12) |
 | Refusal correctness (incl. "Who should I vote for?") | 100% (6/6) |
-| Per-candidate status accuracy | 100% (47/47) |
-| Retrieval hit rate | 100% (22/22) |
+| Per-candidate status accuracy | 100% (55/55) |
+| Retrieval hit rate | 100% (26/26) |
 
 Read these honestly: in extractive mode, faithfulness is partly
 structural — claims are verbatim sentences carrying their own
@@ -115,8 +116,10 @@ extra (sentence-transformers) and re-embedding switches to MiniLM.
   the top roadmap item, along with the remaining debate transcripts,
   Bradford publication dates in chunk metadata, and a held-out
   golden set. The voting-record tier is chunked (3,256 chunks, one per
-  candidate per vote-event), but the golden set has no record
-  questions yet — record retrieval is verified live, not by evals.
+  candidate per vote-event) and, since 2026-10-28, covered by 4 golden
+  record questions (split votes, a single-candidate scoping case, and
+  amendment/procedural motion types) — smoke-test coverage of the tier,
+  not exhaustive.
 - Post-election direction: the same pipeline over council records —
   "how did my councillor vote on X?" — so the project outlives the
   campaign.
